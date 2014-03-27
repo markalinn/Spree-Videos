@@ -1,0 +1,17 @@
+<h1>Product Videos</h1>
+
+<table>
+  <tr>
+    <th>Youtube ref</th>
+    <th>Product</th>
+    <th>Show</th>
+  </tr>
+
+<% @videos.each do |video| %>
+  <tr>
+    <td><%= video.youtube_ref %></td>
+    <td><%= video.product_id %></td>
+    <td><%= link_to 'Show', video %></td>
+  </tr>
+<% end %>
+</table>

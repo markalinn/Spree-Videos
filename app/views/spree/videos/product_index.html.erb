@@ -1,0 +1,5 @@
+<%= content_tag(:h1, t(:product_video_index, :name => @product.name)) %>
+<div id="product-videos-index">
+  <%= render 'spree/products/video_player', :video => @videos.first %>
+  <%= render 'spree/products/video_thumbnails', :videos => @videos %>
+</div>
